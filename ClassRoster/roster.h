@@ -16,17 +16,12 @@ public:
 	Roster() = default;
 
 	//create an array of pointers classRosterArray to hold data in "studentData" Table
-	Student* classRosterArray[5] = {nullptr,nullptr,nullptr,nullptr,nullptr};
-
-	// // Create a student object for each student in the data table and populate classRosterArray
-	// Student student;
-
-	
+	Student* classRosterArray[5] = { nullptr,nullptr,nullptr,nullptr,nullptr };
 
 	/************************* void add() function *********************************
 	*	Add each student object to classRosterArray
 	*********************************************************************************/
-	void add(string studentID, string firstName, string lastName, string email, int age, int daysInCourse1, 
+	void add(string studentID, string firstName, string lastName, string email, int age, int daysInCourse1,
 		int daysInCourse2, int daysInCourse3, DegreeProgram degreeProgram);
 
 
@@ -36,20 +31,20 @@ public:
 	*	indicating that the student was not found.
 	*	if student does not exist, print error mesage: "Student ID not found"
 	************************************************************************************/
-	void remove (string StudentID);
-			
-	
+	void remove(string StudentID);
+
+
 
 	/************************* voidprintAll() function *********************************
 	*	prints a complete tab - separated ist of student data in the provided format :
-	*	A1 [tab] First Name: John [tab] Last Name: Smith [tab] 
+	*	A1 [tab] First Name: John [tab] Last Name: Smith [tab]
 	*	Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security
 	************************************************************************************/
 	void printAll();
 
 
 	/************************* printAverageDaysInCourse Function ************************
-	*	correctly prints a student’s average number of days in the three courses. 
+	*	correctly prints a student’s average number of days in the three courses.
 	*	The student is identified by the studentID parameter.
 	************************************************************************************/
 	void printAverageDaysInCourse(string studentID);
@@ -61,4 +56,9 @@ public:
 
 	/****************************************************************************/
 	void parse(const string&);
+
+	void printByDegreeProgram(DegreeProgram degreeProgram);
+
+	~Roster();
 };
+

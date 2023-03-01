@@ -22,7 +22,7 @@ public:
 	string getLastName();
 	string getEmail();
 	int getAge();
-	int * getDaysToComplete();
+	int* getDaysToComplete();
 	DegreeProgram getDegreeProg();
 
 	//2b.  a mutator (i.e., setter) for each instance variable from part D1
@@ -33,15 +33,15 @@ public:
 	void setAge(int age);
 	void setDaysToComplete(int daysToComplete[3]);
 	void setDegreeProg(DegreeProgram degreeProg);
-	
+
 	//2d.  constructor using all of the input parameters provided in the table
 	Student();
-	Student(string studentID, string firstName, string lastName, string email, 
-			int age, int daysInCourse1, int daysInCourse2, int daysInCourse3,
-			DegreeProgram degreeProgram );
+	Student(string studentID, string firstName, string lastName, string email,
+		int age, int daysInCourse1, int daysInCourse2, int daysInCourse3,
+		DegreeProgram degreeProgram);
 
 	//2e.print() to print specific student data
 	void print();
 
-	
+
 };

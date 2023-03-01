@@ -8,9 +8,9 @@ Student::Student() {
 	this->lastName = "";
 	this->email = "";
 	this->age = 0;
-	daysToComplete[0]=0;
-	daysToComplete[1]=0;
-	daysToComplete[2]=0;
+	daysToComplete[0] = 0;
+	daysToComplete[1] = 0;
+	daysToComplete[2] = 0;
 
 	this->degreeProgram = SOFTWARE;
 }
@@ -50,9 +50,7 @@ int Student::getAge() {
 	return age;
 }
 
-// int *
-int * Student::getDaysToComplete() {
-	// not sure what to return -- come back to this later
+int* Student::getDaysToComplete() {
 	return daysToComplete;
 }
 
@@ -68,6 +66,7 @@ void Student::print() {
 	cout << "Age: " << age << "\t";
 	cout << "daysInCourse: {" << daysToComplete[0] << ", " << daysToComplete[1] << ", " << daysToComplete[2] << "}\t";
 
+
 	string dp_str = "";
 	if (degreeProgram == SECURITY) {
 		dp_str = "SECURITY";
@@ -75,10 +74,12 @@ void Student::print() {
 	else if (degreeProgram == NETWORK) {
 		dp_str = "NETWORK";
 	}
-	else if (degreeProgram == SOFTWARE){
+	else if (degreeProgram == SOFTWARE) {
 		dp_str = "SOFTWARE";
-	} else {
+	}
+	else {
 		dp_str = "UNKNOWN";
 	}
 	cout << "Degree Program: " << dp_str << endl;
+	
 }
